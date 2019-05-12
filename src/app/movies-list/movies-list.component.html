@@ -5,8 +5,17 @@
   </mat-form-field>
 </form>
 
-<mat-list role="list">
-  <mat-list-item routerLink="/movie" routerLinkActive="active" 
-  role="listitem" *ngFor='let name of names |movieSearch:searchMovie'>
-    {{name | uppercase}}</mat-list-item>
+<mat-list>
+  <mat-list-item [routerLink]="['/movie', movie.id]" 
+  routerLinkActive="active" 
+  *ngFor='let movie of movies | movieSearch:searchMovie'>
+    <img matListAvatar [src]="movie['img']" alt="movie-image">
+    <h3 matLine> {{movie.name | uppercase}} </h3>
+    <p matLine>
+      <span>Genres: {{movie.genres}}</span>
+    </p>
+    <p matLine>
+      <span>Rate: {{movie.rate}}</span>
+    </p>
+  </mat-list-item>
 </mat-list>

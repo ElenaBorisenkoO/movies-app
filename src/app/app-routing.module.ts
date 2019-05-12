@@ -6,8 +6,8 @@ import { MovieDetailsComponent } from './movies-list/movie-details/movie-details
 
 const routes: Routes = [
   { path: 'movies', component: MoviesListComponent },
-  { path: 'movie', component: MovieDetailsComponent },
-  {path: '', redirectTo: 'movies', pathMatch : 'full'}
+  { path: 'movie/:id', component: MovieDetailsComponent },
+  { path: '', redirectTo: 'movies', pathMatch : 'full'}
   
 ];
 
@@ -15,7 +15,8 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    RouterModule.forChild(routes)
   ],
   exports: [ RouterModule ]
 })

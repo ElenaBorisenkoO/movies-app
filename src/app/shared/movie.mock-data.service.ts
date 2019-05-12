@@ -6,8 +6,8 @@ import { from, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MockDataService {
-
-  moviesList:Observable<any> = from([
+  movie: {} = {};
+  moviesList: Observable<any> = from([
     {
       id: 1,
       key: "deadpool",
@@ -20,7 +20,7 @@ export class MockDataService {
       ],
       rate: "8.6",
       length: "1hr 48mins",
-      img: "deadpool.jpg"
+      img: "assets/images/deadpool.jpg"
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ export class MockDataService {
       ],
       rate: "7.0",
       length: "1hr 50mins",
-      img: "we-are-the-millers.jpg"
+      img: "assets/images/we-are-the-millers.jpg"
     },
     {
       id: 3,
@@ -48,7 +48,7 @@ export class MockDataService {
       ],
       rate: "8.0",
       length: "2hr 27mins",
-      img: "straight-outta-compton.jpg"
+      img: "assets/images/straight-outta-compton.jpg"
     },
     {
       id: 4,
@@ -62,7 +62,7 @@ export class MockDataService {
       ],
       rate: "6.9",
       length: "2hr 5mins",
-      img: "gridiron-gang.jpg"
+      img: "assets/images/gridiron-gang.jpg"
     },
     {
       id: 5,
@@ -76,11 +76,11 @@ export class MockDataService {
       ],
       rate: "7.8",
       length: "2hr 37mins",
-      img: "american-gangster.jpg"
+      img: "assets/images/american-gangster.jpg"
     },
     {
       id: 6,
-    key: "gangster-squad",
+      key: "gangster-squad",
       name: "Gangster Squad",
       description: "It's 1949 Los Angeles, the city is run by gangsters and a malicious mobster, Mickey Cohen. Determined to end the corruption, John O'Mara assembles a team of cops, ready to take down the ruthless leader and restore peace to the city.",
       genres: [
@@ -90,7 +90,7 @@ export class MockDataService {
       ],
       rate: "6.8",
       length: "1hr 53mins",
-      img: "gangster-squad.jpg"
+      img: "assets/images/gangster-squad.jpg"
     },
     {
       id: 7,
@@ -104,7 +104,7 @@ export class MockDataService {
       ],
       rate: "7.3",
       length: "1hr 55mins",
-      img: "now-you-see-me.jpg"
+      img: "assets/images/now-you-see-me.jpg"
     },
     {
       id: 8,
@@ -118,7 +118,7 @@ export class MockDataService {
       ],
       rate: "7.1",
       length: "2hr 4mins",
-      img: "jurassic-world.jpg"
+      img: "assets/images/jurassic-world.jpg"
     },
     {
       id: 9,
@@ -132,7 +132,7 @@ export class MockDataService {
       ],
       rate: "7.5",
       length: "2hr 11mins",
-      img: "mission-impossible-rogue-nation.jpg"
+      img: "assets/images/mission-impossible-rogue-nation.jpg"
     },
     {
       id: 10,
@@ -146,10 +146,10 @@ export class MockDataService {
       ],
       rate: "7.3",
       length: "1hr 56mins",
-      img: "the-man-from-uncle.jpg"
+      img: "assets/images/the-man-from-uncle.jpg"
     },
     {
-      id: 10,
+      id: 11,
       key: "spectre",
       name: "Spectre",
       description: "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
@@ -160,10 +160,10 @@ export class MockDataService {
       ],
       rate: "6.9",
       length: "2hr 28mins",
-      img: "spectre.jpg"
+      img: "assets/images/spectre.jpg"
     },
     {
-      id: 11,
+      id: 12,
       key: "legend",
       name: "Legend",
       description: "The film tells the story of the identical twin gangsters Reggie and Ronnie Kray, two of the most notorious criminals in British history, and their organised crime empire in the East End of London during the 1960s.",
@@ -174,10 +174,10 @@ export class MockDataService {
       ],
       rate: "7.0",
       length: "2hr 28mins",
-      img: "legend.jpg"
+      img: "assets/images/legend.jpg"
     },
     {
-      id: 12,
+      id: 13,
       key: "southpaw",
       name: "Southpaw",
       description: "Boxer Billy Hope turns to trainer Tick Wills to help him get his life back on track after losing his wife in a tragic accident and his daughter to child protection services.",
@@ -188,10 +188,10 @@ export class MockDataService {
       ],
       rate: "7.5",
       length: "2hr 4mins",
-      img: "southpaw.jpg"
+      img: "assets/images/southpaw.jpg"
     },
     {
-      id: 13,
+      id: 14,
       key: "bridge-of-spies",
       name: "Bridge of Spies",
       description: "During the Cold War, an American lawyer is recruited to defend an arrested Soviet spy in court, and then help the CIA facilitate an exchange of the spy for the Soviet captured American U2 spy plane pilot, Francis Gary Powers.",
@@ -202,10 +202,10 @@ export class MockDataService {
       ],
       rate: "7.7",
       length: "2hr 22mins",
-      img: "bridge-of-spies.jpg"
+      img: "assets/images/bridge-of-spies.jpg"
     },
     {
-      id: 14,
+      id: 15,
       key: "ant-man",
       name: "Ant-Man",
       description: "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
@@ -216,10 +216,10 @@ export class MockDataService {
       ],
       rate: "7.4",
       length: "1hr 57mins",
-      img: "ant-man.jpg"
+      img: "assets/images/ant-man.jpg"
     },
     {
-      id: 15,
+      id: 16,
       key: "fast-and-furious-7",
       name: "Fast & Furious 7",
       description: "Deckard Shaw seeks revenge against Dominic Toretto and his family for his comatose brother.",
@@ -230,10 +230,10 @@ export class MockDataService {
       ],
       rate: "7.3",
       length: "2hr 17mins",
-      img: "fast-and-furious-7.jpg"
+      img: "assets/images/fast-and-furious-7.jpg"
     },
     {
-      id: 16,
+      id: 17,
       key: "tracers",
       name: "Tracers",
       description: "Wanted by the Chinese mafia, a New York City bike messenger escapes into the world of parkour after meeting a beautiful stranger.",
@@ -244,10 +244,10 @@ export class MockDataService {
       ],
       rate: "5.6",
       length: "1hr 34mins",
-      img: "tracers.jpg"
+      img: "assets/images/tracers.jpg"
     },
     {
-      id: 17,
+      id: 18,
       key: "running-scared",
       name: "Running Scared",
       description: "A low-ranking thug is entrusted by his crime boss to dispose of a gun that killed corrupt cops, but things get out of control when the gun ends up in wrong hands.",
@@ -258,10 +258,10 @@ export class MockDataService {
       ],
       rate: "7.4",
       length: "2hr 2mins",
-      img: "running-scared.jpg"
+      img: "assets/images/running-scared.jpg"
     },
     {
-      id: 18,
+      id: 19,
       key: "the-hangover",
       name: "The Hangover",
       description: "Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding.",
@@ -270,10 +270,10 @@ export class MockDataService {
       ],
       rate: "7.8",
       length: "1hr 40mins",
-      img: "the-hangover.jpg"
+      img: "assets/images/the-hangover.jpg"
     },
     {
-      id: 19,
+      id: 20,
       key: "project-x",
       name: "Project X",
       description: "3 high school seniors throw a birthday party to make a name for themselves. As the night progresses, things spiral out of control as word of the party spreads.",
@@ -283,10 +283,10 @@ export class MockDataService {
       ],
       rate: "6.7",
       length: "1hr 28mins",
-      img: "project-x.jpg"
+      img: "assets/images/project-x.jpg"
     },
     {
-      id: 20,
+      id: 21,
       key: "the-dark-knight",
       name: "The Dark Knight",
       description: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, the caped crusader must come to terms with one of the greatest psychological tests of his ability to fight injustice.",
@@ -297,10 +297,10 @@ export class MockDataService {
       ],
       rate: "9.0",
       length: "2hr 32mins",
-      img: "the-dark-knight.jpg"
+      img: "assets/images/the-dark-knight.jpg"
     },
     {
-      id: 21,
+      id: 22,
       key: "the-tournament",
       name: "The Tournament",
       description: "Every seven years in an unsuspecting town, The Tournament takes place. A battle royale between 30 of the world's deadliest assassins. The last man standing receiving the $10,000,000 cash prize and the title of Worlds No 1, which itself carries the legendary million dollar a bullet price tag.",
@@ -310,10 +310,10 @@ export class MockDataService {
       ],
       rate: "6.1",
       length: "1hr 35mins",
-      img: "the-tounament.jpg"
+      img: "assets/images/the-tounament.jpg"
     },
     {
-      id: 22,
+      id: 23,
       key: "the-matrix",
       name: "The Matrix",
       description: "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
@@ -323,10 +323,10 @@ export class MockDataService {
       ],
       rate: "8.7",
       length: "2hr 16mins",
-      img: "the-matrix.jpg"
+      img: "assets/images/the-matrix.jpg"
     },
     {
-      id: 23,
+      id: 24,
       key: "bad-boys",
       name: "Bad Boys",
       description: "Two hip detectives protect a murder witness while investigating a case of stolen heroin.",
@@ -337,11 +337,20 @@ export class MockDataService {
       ],
       rate: "6.8",
       length: "1hr 59mins",
-      img: "bad-boys.jpg"
+      img: "assets/images/bad-boys.jpg"
     }
   ]);
 
   getMovies(): Observable<any> {
     return this.moviesList
+  }
+
+  getMovie(id): {} {
+    let arr = [];
+    this.moviesList.subscribe((data) => {
+      arr.push(data);
+    });
+    this.movie = arr[id-1]
+    return this.movie;
   }
 }
