@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MockDataService } from 'src/app/shared/movie.mock-data.service';
 import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 import {Location} from '@angular/common'
+import { IFilm } from 'src/app/shared/movie.interface';
 
 @Component({
   selector: 'app-movie-details',
@@ -9,12 +10,8 @@ import {Location} from '@angular/common'
   styleUrls: ['./movie-details.component.css']
 })
 export class MovieDetailsComponent implements OnInit {
-  // name: string;
-  // description: string;
-  // rate: string;
-  // genres: string[];
-  // length: string;
-  movie: {};
+
+  movie: IFilm;
 
   constructor(
     private route: ActivatedRoute,
@@ -26,7 +23,6 @@ export class MovieDetailsComponent implements OnInit {
   ngOnInit() {
     let id = this.route.snapshot.paramMap.get('id');
     this.movie = this.movieServise.getMovie(id);
-    console.log('from component', this.movie);
   }
   goBack(){
     this.location.back()

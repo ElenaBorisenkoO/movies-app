@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { from, Observable } from 'rxjs';
-// import { IFilm } from './movie.interface';
+import { IFilm } from './movie.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MockDataService {
-  movie: {} = {};
-  moviesList: Observable<any> = from([
+  movie:IFilm;
+  moviesList: Observable<IFilm> = from([
     {
       id: 1,
       key: "deadpool",
@@ -341,16 +341,17 @@ export class MockDataService {
     }
   ]);
 
-  getMovies(): Observable<any> {
+  getMovies(): Observable<IFilm> {
     return this.moviesList
   }
 
-  getMovie(id): {} {
-    let arr = [];
+  getMovie(id): IFilm {
+
     this.moviesList.subscribe((data) => {
-      arr.push(data);
+      if(data["id"] == id){
+        this.movie = data;
+      }
     });
-    this.movie = arr[id-1]
     return this.movie;
   }
 }

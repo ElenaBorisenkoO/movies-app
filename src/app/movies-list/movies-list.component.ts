@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MockDataService } from '../shared/movie.mock-data.service';
+import { IFilm } from '../shared/movie.interface';
 
 @Component({
   selector: 'app-movies-list',
@@ -9,7 +10,7 @@ import { MockDataService } from '../shared/movie.mock-data.service';
 export class MoviesListComponent implements OnInit {
 
   searchMovie: string;
-  movies:any[] = [];
+  movies:IFilm[] = [];
   genres: string[] = ['action', 'adventure', 'biography', 'comedy', 'crime',
     'drama', 'history', 'mystery', 'scifi', 'sport', 'thriller']
 
