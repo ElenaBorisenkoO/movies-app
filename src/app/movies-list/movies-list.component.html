@@ -9,7 +9,7 @@
   <mat-card class="card-picture" [routerLink]="['/movie', movie.id]" routerLinkActive="active"
     *ngFor="let movie of movies | movieSearch:searchMovie">
     <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-      <span fxFlex="80%">{{movie.name}}</span>
+      <span class="card-name" fxFlex="80%">{{movie.name}}</span>
     </mat-card-title>
     <img mat-card-image [src]="movie['img']">
   </mat-card>

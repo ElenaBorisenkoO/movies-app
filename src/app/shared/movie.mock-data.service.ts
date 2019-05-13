@@ -310,7 +310,7 @@ export class MockDataService {
       ],
       rate: "6.1",
       length: "1hr 35mins",
-      img: "assets/images/the-tounament.jpg"
+      img: "assets/images/the-tournament.jpg"
     },
     {
       id: 23,
