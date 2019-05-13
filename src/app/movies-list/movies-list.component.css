@@ -1,9 +1,8 @@
-.example-form {
-    min-width: 150px;
-    max-width: 300px;
-    width: 100%;
+ .card-picture {
+    width: 15%;
+    margin-bottom: 2%;
   }
-  
-  .example-full-width {
-    width: 100%;
+  .container {
+    display: flex;
+    flex-flow: row wrap;
   }

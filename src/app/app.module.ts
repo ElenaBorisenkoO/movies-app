@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatListModule, MatInputModule, MatFormFieldModule, MatButtonModule, MatCardModule } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -28,7 +29,8 @@ import { SearchPipe } from './shared/movie.search.pipe';
     ReactiveFormsModule,
     FormsModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule
   ],
   exports: [
     MatListModule,
@@ -36,7 +38,8 @@ import { SearchPipe } from './shared/movie.search.pipe';
     MatFormFieldModule,
     MatButtonModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
