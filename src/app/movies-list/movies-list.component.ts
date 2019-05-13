@@ -10,8 +10,6 @@ export class MoviesListComponent implements OnInit {
 
   searchMovie: string;
   movies:any[] = [];
-  names: string[] = [];
-  rates: string[] = [];
   genres: string[] = ['action', 'adventure', 'biography', 'comedy', 'crime',
     'drama', 'history', 'mystery', 'scifi', 'sport', 'thriller']
 
@@ -19,9 +17,7 @@ export class MoviesListComponent implements OnInit {
 
   ngOnInit() {
     this.movieServise.getMovies().subscribe((result) => {
-      this.names.push(result['name']);
       this.movies.push(result);
     });
   }
-
 }
